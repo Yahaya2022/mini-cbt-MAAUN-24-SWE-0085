@@ -6,6 +6,7 @@
 <body style="font-family: Arial; text-align: center; padding: 50px;">
     <title>Mini CBT - Current Question</title>
     <p><strong>❓ {{ question.text }}</strong></p>
+    <p>Select the correct option below:</p>
     
     <form action="/submit" method="post">
         {% for key, text in question.choices.items() %}
